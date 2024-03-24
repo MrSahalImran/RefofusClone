@@ -1,5 +1,4 @@
 import React from "react"
-// import { IoIosReturnRight } from "react-icons/io"
 import { BiSubdirectoryRight } from "react-icons/bi";
 const CustomeButton = ({ title }) => {
   return (
@@ -8,7 +7,6 @@ const CustomeButton = ({ title }) => {
         {title}
       </span>
       <BiSubdirectoryRight className="w-10" />
-      {/* <IoIosReturnRight className="self-center " /> */}
     </div>
   )
 }
