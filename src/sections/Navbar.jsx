@@ -11,7 +11,7 @@ const Navbar = () => {
         />
         <div className="links flex gap-14 ml-24">
           {["Home", "Work", "Contact", "|", "News"].map((item, index) => (
-            <a
+            <a key={index}
               className={`text-sm flex items-center gap-1 ${
                 index == 3 ? "text-zinc-600 text-2xl font-thin" : ""
               }`}

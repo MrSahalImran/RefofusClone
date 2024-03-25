@@ -46,7 +46,7 @@ const Work = () => {
           work
         </h1>
         <div className="w-full absolute top-0 h-full">
-          {images.map((item, index) => (item.isActive && (<img
+          {images.map((item, index) => (item.isActive && (<img key={index}
                 src={item.url}
                 className="w-60 absolute rounded-lg -translate-x-[50%] -translate-y-[50%]"
                 style={{ top: item.top, left: item.left }}
