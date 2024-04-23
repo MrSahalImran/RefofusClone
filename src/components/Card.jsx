@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa"
 const Card = ({ width, start, para,hoverCol }) => {
 
   return (
-    <div className={` ${width} p-5 rounded-xl ${para && (`hover:bg-zinc-700`)} bg-zinc-800 ${start && (`hover:bg-violet-700`)}  flex flex-col justify-between min-h-[18rem]`}>
+    <div className={` ${width} p-5 hover:px-8  rounded-xl ${para && (`hover:bg-zinc-700`)} bg-zinc-800 ${start && (`hover:bg-violet-700`)}  flex flex-col justify-between min-h-[18rem] transition-all ease-linear duration-200`}>
       <div className={`w-full`}>
         <div className="w-full flex justify-between items-center">
           <h3>one heading </h3>

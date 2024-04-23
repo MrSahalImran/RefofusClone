@@ -36,8 +36,8 @@ const Products = () => {
 
   const [pos, setPos] = useState(0)
 
-  const mover = (val)=>{
-    setPos(val*23)
+  const mover = (val) => {
+    setPos(val * 23)
   }
 
   return (
@@ -48,14 +48,34 @@ const Products = () => {
       <div className="w-full absolute h-full pointer-events-none top-0">
         <motion.div
           initial={{ y: pos, x: "-50%" }}
-          animate={{y:pos+`rem`}}
-          transition={{ease:[0.76,0,0.24,1]}}
+          animate={{ y: pos + `rem` }}
+          transition={{ ease: [0.76, 0, 0.24, 1] }}
           className="w-[28rem] rounded-xl h-[23rem] absolute left-[45%] -translate-x-[50%] overflow-hidden bg-white"
         >
-          <motion.div animate={{y: -pos+'rem'}}  transition={{ease:[0.76,0,0.24,1]}}  className="w-full rounded-xl h-full bg-sky-100"></motion.div>
-          <motion.div animate={{y: -pos+'rem'}}  transition={{ease:[0.76,0,0.24,1]}} className="w-full rounded-xl h-full bg-sky-200"></motion.div>
-          <motion.div animate={{y: -pos+'rem'}}  transition={{ease:[0.76,0,0.24,1]}} className="w-full rounded-xl h-full bg-sky-300"></motion.div>
-          <motion.div animate={{y: -pos+'rem'}}  transition={{ease:[0.76,0,0.24,1]}} className="w-full rounded-xl h-full bg-sky-400"></motion.div>
+          <motion.div
+            animate={{ y: -pos + "rem" }}
+            transition={{ ease: [0.76, 0, 0.24, 1] }}
+            className="w-full rounded-xl h-full bg-sky-100"
+            style={{ backgroundImage: "url('/pic1.webp')", backgroundSize: "cover" }}
+          ></motion.div>
+          <motion.div
+            animate={{ y: -pos + "rem" }}
+            transition={{ ease: [0.76, 0, 0.24, 1] }}
+            className="w-full rounded-xl h-full bg-sky-200"
+            style={{ backgroundImage: "url('/pic2.jpeg')", backgroundSize: "cover" }}
+          ></motion.div>
+          <motion.div
+            animate={{ y: -pos + "rem" }}
+            transition={{ ease: [0.76, 0, 0.24, 1] }}
+            className="w-full rounded-xl h-full bg-sky-300"
+            style={{ backgroundImage: "url('/pic3.jpeg')", backgroundSize: "cover" }}
+          ></motion.div>
+          <motion.div
+            animate={{ y: -pos + "rem" }}
+            transition={{ ease: [0.76, 0, 0.24, 1] }}
+            className="w-full rounded-xl h-full bg-sky-400"
+            style={{ backgroundImage: "url('/pic4.jpg')", backgroundSize: "cover" }}
+          ></motion.div>
         </motion.div>
       </div>
     </div>
