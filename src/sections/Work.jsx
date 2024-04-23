@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { late } from "zod"
 
 const Work = () => {
+  
   const [images, setImages] = useState([
     {
       url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef09178195ce0073e38f3_Refokus%20Tools-1.png",
@@ -24,7 +25,7 @@ const Work = () => {
     },
     {
       url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef092455ce2cf591e52d1_Rainfall.png",
-      top: "560%",
+      top: "56%",
       left: "53%",
       isActive: false,
     },
@@ -79,7 +80,7 @@ const Work = () => {
     }
   })
   return (
-    <div className="w-full">
+    <div className="w-full select-none">
       <div className="relative max-w-screen mx-auto text-center">
         <h1 className="text-[38vw] font-medium select-none leading-none">
           work
